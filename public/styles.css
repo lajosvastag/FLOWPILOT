@@ -2,3 +2,30 @@
 
 .curie-symbol{width:38px;height:38px;border-radius:9px;object-fit:cover;object-position:center top;background:#fff;margin-right:10px;border:1px solid #2b2b2b}.authorship-card{display:flex;align-items:center;gap:10px;margin:0 4px 16px;padding:10px;background:#0a1018;border:1px solid #292929;border-radius:8px}.authorship-card img{width:38px;height:38px;object-fit:cover;object-position:center top;background:#fff;border-radius:5px}.authorship-card div{display:flex;flex-direction:column;min-width:0}.authorship-card strong{font-size:9px;color:#f1f1f1;line-height:1.35}.authorship-card span{font-size:8px;color:#777;margin-top:3px;line-height:1.35}.wave{font-size:21px;filter:grayscale(1);margin-left:5px}.brand-copy small{font-size:8px;color:#a2a2a2;letter-spacing:.4px;text-transform:none}.automation-mini .auto-symbol.violet{color:#9cc8ff;background:#10243b}
 @media (max-width:760px){.authorship-card{margin-top:10px}.curie-symbol{width:34px;height:34px}}
+
+/* Revisão artesanal: menos app premium, mais painel web feito à mão. */
+body{font-family:Arial,Helvetica,sans-serif;background-color:#05080d;background-image:linear-gradient(#0d1722 1px,transparent 1px),linear-gradient(90deg,#0d1722 1px,transparent 1px);background-size:32px 32px}
+.topbar{backdrop-filter:none;background:#070b10;border-bottom:2px solid #20364d}
+h1{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.8px}
+.panel,.metric-card{border-radius:2px!important;box-shadow:3px 3px 0 #020304}
+.metric-card,.panel,.automation-mini,.automation-table,.execution-list,.settings-nav,.settings-card{border-color:#29415a}
+.panel-heading{border-bottom:1px dotted #29415a;padding-bottom:12px}
+.panel-heading h2{font-family:Georgia,'Times New Roman',serif;text-transform:none;font-weight:700}
+.primary-button{border-radius:2px!important;background:#2f7cff;border:1px solid #8cc1ff;box-shadow:2px 2px 0 #020304}
+.primary-button:hover{background:#5b9bff;box-shadow:2px 2px 0 #020304;transform:none}
+.secondary-button,.select-wrap select,.search-box,.filter-tabs,.filter-tab,.settings-link,.icon-button,.nav-item,.workspace-selector,.health-card,.authorship-card,.modal,.modal input,.modal textarea,.modal select{border-radius:2px!important}
+.secondary-button{box-shadow:2px 2px 0 #020304}
+.nav-item.active{border-radius:2px!important;background:#102139;box-shadow:inset 4px 0 var(--purple),2px 2px 0 #020304}
+.filter-tab.active,.settings-link.active{box-shadow:inset 0 -2px var(--purple);border-radius:0!important}
+.text-button{font-family:Georgia,'Times New Roman',serif;text-decoration:underline;text-underline-offset:2px}
+.live-pill,.execution-summary{border-radius:2px!important}
+.automation-mini{border-radius:2px!important;box-shadow:2px 2px 0 #020304}
+.automation-mini:hover{transform:none;box-shadow:3px 3px 0 #020304}
+.auto-symbol,.metric-icon,.execution-status,.queue-spinner,.queue-check,.queue-error{border-radius:2px!important}
+.curie-symbol,.authorship-card img{border-radius:2px!important}
+.modal-backdrop{backdrop-filter:none;background:#020407dd}
+.modal{box-shadow:5px 5px 0 #020304}
+input,textarea,select{border-radius:2px!important}
+.profile-avatar,.top-avatar{border-radius:2px!important}
+.status-dot,.health-orb,.summary-dot{border-radius:0!important}
+@media (max-width:760px){.metric-card,.panel,.automation-mini{box-shadow:2px 2px 0 #020304}}

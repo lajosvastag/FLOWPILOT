@@ -15,7 +15,7 @@ Plataforma de automação de processos para organizar tarefas repetitivas, proce
 - **Movimento:** dark control room / neo-brutalismo refinado, com superfícies profundas e sinais de estado luminosos.
 - **Princípios:** densidade informacional com respiro; hierarquia clara; ação sempre visível; feedback operacional em tempo real.
 - **Cores:** azul elétrico como cor de ação e orientação; superfícies quase pretas, grafite azulado e separadores frios para dar profundidade sem abandonar o tema escuro; verde, âmbar e vermelho ficam reservados aos sinais semânticos de operação.
-- **Layout:** navegação lateral persistente, cabeçalho contextual e canvas de operações sobre uma malha técnica azul-noturna, com blocos assimétricos e leitura de console, evitando uma grade genérica centralizada.
+- **Layout:** navegação lateral persistente, cabeçalho contextual e canvas de operações sobre uma malha técnica azul-noturna, com blocos assimétricos, bordas duras, barras de título e leitura de site artesanal, evitando uma grade genérica centralizada.
 - **Assinaturas:** marca hexagonal “F” em gradiente; linha de progresso violeta; cartões com trilha lateral de status.
 - **Interação:** cada clique importante responde com mudança de status, toast e registro no histórico. Modais curtos para decisões, sem esconder contexto.
 - **Animação:** entrada suave de cards, pulse discreto em automações ativas e transições de 180–240ms; nenhum movimento decorativo excessivo.
