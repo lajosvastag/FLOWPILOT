@@ -14,8 +14,8 @@ Plataforma de automação de processos para organizar tarefas repetitivas, proce
 ## Design
 - **Movimento:** dark control room / neo-brutalismo refinado, com superfícies profundas e sinais de estado luminosos.
 - **Princípios:** densidade informacional com respiro; hierarquia clara; ação sempre visível; feedback operacional em tempo real.
-- **Cores:** roxo como cor proprietária para orientar foco e identidade; violetas suaves para ações; fundos quase pretos e bordas frias para reduzir ruído; verde, âmbar e vermelho apenas como sinais semânticos.
-- **Layout:** navegação lateral persistente, cabeçalho contextual e canvas de operações com cartões assimétricos, evitando uma grade genérica centralizada.
+- **Cores:** preto absoluto e grafite para todas as superfícies, separadores e elementos estruturais; roxo FlowPilot aparece somente em botões de ação; verde, âmbar e vermelho ficam reservados aos sinais semânticos de operação.
+- **Layout:** navegação lateral persistente, cabeçalho contextual e canvas de operações sobre uma malha técnica preta, com blocos assimétricos e leitura de console, evitando uma grade genérica centralizada.
 - **Assinaturas:** marca hexagonal “F” em gradiente; linha de progresso violeta; cartões com trilha lateral de status.
 - **Interação:** cada clique importante responde com mudança de status, toast e registro no histórico. Modais curtos para decisões, sem esconder contexto.
 - **Animação:** entrada suave de cards, pulse discreto em automações ativas e transições de 180–240ms; nenhum movimento decorativo excessivo.
