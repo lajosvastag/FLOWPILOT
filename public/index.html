@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0912" />
+    <meta name="description" content="FlowPilot — painel operacional para automatizar processos e acompanhar cada execução." />
+    <title>FlowPilot — Automação de processos</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true"><span>F</span></div>
+          <div class="brand-copy"><strong>flow<span>pilot</span></strong><small>Operations workspace</small></div>
+          <button class="icon-button sidebar-close" id="sidebar-close" aria-label="Fechar menu">×</button>
+        </div>
+        <div class="workspace-selector">
+          <div class="workspace-avatar">AP</div>
+          <div><strong>Ateliê de processos</strong><span>Workspace principal</span></div>
+          <span class="chevron">⌄</span>
+        </div>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <p class="nav-label">Workspace</p>
+          <button class="nav-item active" data-view="overview"><span class="nav-icon">◈</span><span>Visão geral</span><kbd>01</kbd></button>
+          <button class="nav-item" data-view="automations"><span class="nav-icon">⌘</span><span>Automações</span><kbd>02</kbd></button>
+          <button class="nav-item" data-view="executions"><span class="nav-icon">↯</span><span>Execuções</span><kbd>03</kbd></button>
+          <p class="nav-label nav-label-spaced">Gerenciar</p>
+          <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>Configurações</span></button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="health-card"><div class="health-orb"></div><div><strong>Todos os sistemas operacionais</strong><span>Última verificação agora</span></div></div>
+          <div class="profile"><div class="profile-avatar">DR</div><div><strong>Daniel Rocha</strong><span>Administrador</span></div><span class="more">•••</span></div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="topbar-left"><button class="icon-button menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button><span class="breadcrumb">Workspace <b>/</b> <strong id="breadcrumb-label">Visão geral</strong></span></div>
+          <div class="topbar-actions"><button class="icon-button" id="command-button" aria-label="Pesquisar">⌕</button><button class="icon-button notification-button" aria-label="Notificações">♢<i></i></button><div class="top-avatar">DR</div></div>
+        </header>
+
+        <div class="page-wrap">
+          <section class="view active" id="view-overview">
+            <div class="page-heading"><div><p class="eyebrow">QUINTA-FEIRA, 09 OUT 2026 <span class="live-dot"></span> AO VIVO</p><h1>Bom dia, Daniel <span class="wave">✦</span></h1><p class="subheading">Seu sistema está fluindo. Aqui está o pulso das suas operações.</p></div><button class="primary-button" id="new-automation"><span>＋</span> Nova automação</button></div>
+            <div class="metric-grid" id="metrics">
+              <article class="metric-card accent-purple"><div class="metric-top"><span>Automações ativas</span><span class="metric-icon">⌘</span></div><strong data-metric="active">—</strong><div class="metric-foot"><span class="trend positive">↗ 12,5%</span><span>vs. mês anterior</span></div></article>
+              <article class="metric-card"><div class="metric-top"><span>Execuções este mês</span><span class="metric-icon">↯</span></div><strong data-metric="executions">—</strong><div class="metric-foot"><span class="trend positive">↗ 8,2%</span><span>vs. mês anterior</span></div></article>
+              <article class="metric-card"><div class="metric-top"><span>Taxa de sucesso</span><span class="metric-icon">◉</span></div><strong data-metric="success_rate">—</strong><div class="metric-foot"><span class="trend positive">↗ 2,4%</span><span>últimos 30 dias</span></div></article>
+              <article class="metric-card"><div class="metric-top"><span>Tempo economizado</span><span class="metric-icon">◷</span></div><strong data-metric="time_saved">—</strong><div class="metric-foot"><span class="trend violet">+ 4h 18m</span><span>esta semana</span></div></article>
+            </div>
+            <div class="content-grid">
+              <section class="panel operations-panel"><div class="panel-heading"><div><p class="panel-kicker">MAPA OPERACIONAL</p><h2>Fluxo de execuções</h2></div><div class="select-wrap"><select id="chart-range"><option>Últimos 7 dias</option><option>Últimos 30 dias</option></select></div></div><div class="chart-wrap"><div class="chart-legend"><span><i class="legend-dot purple"></i> Execuções</span><span><i class="legend-dot green"></i> Sucesso</span><span class="chart-total">1.284 <small>execuções</small></span></div><div class="chart" aria-label="Gráfico de execuções nos últimos 7 dias"><div class="chart-y"><span>240</span><span>180</span><span>120</span><span>60</span><span>0</span></div><div class="chart-plot"><div class="grid-line g1"></div><div class="grid-line g2"></div><div class="grid-line g3"></div><div class="grid-line g4"></div><svg viewBox="0 0 700 220" preserveAspectRatio="none" role="img"><defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9b72ff" stop-opacity=".24"/><stop offset="1" stop-color="#9b72ff" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 160 C32 146 54 152 84 130 S136 142 170 112 S218 126 250 94 S302 108 334 88 S382 102 418 78 S468 94 500 60 S548 76 580 48 S632 62 700 28 V220 H0 Z"/><path class="line" d="M0 160 C32 146 54 152 84 130 S136 142 170 112 S218 126 250 94 S302 108 334 88 S382 102 418 78 S468 94 500 60 S548 76 580 48 S632 62 700 28"/><circle cx="580" cy="48" r="4" class="chart-point"/></svg><div class="chart-x"><span>03 out</span><span>04 out</span><span>05 out</span><span>06 out</span><span>07 out</span><span>08 out</span><span>09 out</span></div></div></div></div></section>
+              <section class="panel queue-panel"><div class="panel-heading"><div><p class="panel-kicker">FILA DE TAREFAS</p><h2>Agora</h2></div><span class="live-pill"><i></i> Operando</span></div><div class="queue-list" id="queue-list"><div class="queue-item"><div class="queue-spinner"></div><div><strong>Organizador de arquivos</strong><span>Processando lote #8421</span></div><time>agora</time></div><div class="queue-item"><div class="queue-check">✓</div><div><strong>Relatório de vendas</strong><span>Concluído em 1m 58s</span></div><time>há 2 min</time></div><div class="queue-item"><div class="queue-check">✓</div><div><strong>Validador de notas</strong><span>Concluído em 31s</span></div><time>há 6 min</time></div><div class="queue-item"><div class="queue-error">!</div><div><strong>Limpeza de dados</strong><span class="danger-text">Falhou na etapa de validação</span></div><time>há 12 min</time></div></div><button class="text-button" data-view-target="executions">Ver todas as execuções <span>→</span></button></section>
+            </div>
+            <section class="panel automations-panel"><div class="panel-heading"><div><p class="panel-kicker">CATÁLOGO DE AUTOMAÇÕES</p><h2>Suas automações</h2></div><button class="text-button" data-view-target="automations">Gerenciar automações <span>→</span></button></div><div class="automation-grid" id="overview-automations"></div></section>
+          </section>
+
+          <section class="view" id="view-automations"><div class="page-heading"><div><p class="eyebrow">CATÁLOGO OPERACIONAL</p><h1>Automações</h1><p class="subheading">Construa, organize e acompanhe cada fluxo de trabalho.</p></div><button class="primary-button" id="new-automation-2"><span>＋</span> Nova automação</button></div><div class="toolbar"><div class="search-box"><span>⌕</span><input id="automation-search" placeholder="Buscar automações..." /></div><div class="filter-tabs" id="automation-filters"><button class="filter-tab active" data-filter="all">Todas</button><button class="filter-tab" data-filter="active">Ativas</button><button class="filter-tab" data-filter="paused">Pausadas</button></div></div><div class="automation-table panel"><div class="table-head"><span>Automação</span><span>Status</span><span>Agendamento</span><span>Execuções</span><span>Taxa de sucesso</span><span></span></div><div id="automation-list"></div></div></section>
+
+          <section class="view" id="view-executions"><div class="page-heading"><div><p class="eyebrow">RASTREABILIDADE COMPLETA</p><h1>Execuções</h1><p class="subheading">Cada execução deixa um rastro claro — inclusive quando algo sai do esperado.</p></div><div class="execution-summary"><span class="summary-dot"></span><strong id="execution-summary-text">Atualizando dados...</strong></div></div><div class="toolbar"><div class="search-box"><span>⌕</span><input id="execution-search" placeholder="Buscar por automação ou ID..." /></div><div class="filter-tabs" id="execution-filters"><button class="filter-tab active" data-filter="all">Todas</button><button class="filter-tab" data-filter="success">Sucesso</button><button class="filter-tab" data-filter="running">Em andamento</button><button class="filter-tab" data-filter="error">Com erro</button></div></div><div class="execution-list panel" id="execution-list"></div></section>
+
+          <section class="view" id="view-settings"><div class="page-heading"><div><p class="eyebrow">CONTROLE DO WORKSPACE</p><h1>Configurações</h1><p class="subheading">Ajuste o comportamento do FlowPilot para a sua operação.</p></div></div><div class="settings-layout"><div class="settings-nav panel"><button class="settings-link active">Workspace</button><button class="settings-link">Membros e permissões</button><button class="settings-link">Notificações</button><button class="settings-link">Integrações</button></div><div class="settings-card panel"><p class="panel-kicker">PREFERÊNCIAS GERAIS</p><h2>Ateliê de processos</h2><p class="settings-intro">Essas definições se aplicam a todas as automações deste workspace.</p><label class="setting-row"><span><strong>Registrar logs detalhados</strong><small>Guarda etapas, payloads e tempos de cada execução.</small></span><input type="checkbox" checked /><i class="toggle"></i></label><label class="setting-row"><span><strong>Notificar erros no painel</strong><small>Exibe falhas recentes na fila de tarefas.</small></span><input type="checkbox" checked /><i class="toggle"></i></label><label class="setting-row"><span><strong>Modo de proteção</strong><small>Solicita confirmação antes de executar fluxos críticos.</small></span><input type="checkbox" /><i class="toggle"></i></label><button class="primary-button settings-save">Salvar alterações</button></div></div></section>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="automation-modal" aria-hidden="true"><div class="modal"><div class="modal-head"><div><p class="panel-kicker">NOVO FLUXO</p><h2>Nova automação</h2></div><button class="icon-button modal-close" data-close-modal>×</button></div><form id="automation-form"><label>Nome da automação<input name="name" required placeholder="Ex.: Sincronizar pedidos" /></label><label>Descrição<textarea name="description" rows="3" placeholder="O que esse fluxo automatiza?"></textarea></label><label>Categoria<select name="category"><option>Operações</option><option>Arquivos</option><option>Dados</option><option>Relatórios</option><option>Financeiro</option></select></label><label>Agendamento<select name="schedule"><option>Manual</option><option>A cada 1 hora</option><option>Diariamente às 08:00</option><option>Quando um arquivo chegar</option></select></label><div class="form-actions"><button type="button" class="secondary-button" data-close-modal>Cancelar</button><button type="submit" class="primary-button">Criar automação</button></div></form></div></div>
+    <div class="modal-backdrop" id="execution-modal" aria-hidden="true"><div class="modal execution-detail"><div class="modal-head"><div><p class="panel-kicker">DETALHE DA EXECUÇÃO</p><h2 id="detail-title">Execução</h2></div><button class="icon-button modal-close" data-close-modal>×</button></div><div id="execution-detail-body"></div></div></div>
+    <div class="toast-region" id="toast-region" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>
