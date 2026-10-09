@@ -29,3 +29,5 @@ input,textarea,select{border-radius:2px!important}
 .profile-avatar,.top-avatar{border-radius:2px!important}
 .status-dot,.health-orb,.summary-dot{border-radius:0!important}
 @media (max-width:760px){.metric-card,.panel,.automation-mini{box-shadow:2px 2px 0 #020304}}
+
+.profile-avatar,.top-avatar{overflow:hidden;padding:0;background:#0a1018!important}.profile-avatar img,.top-avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 22%}
