@@ -328,7 +328,7 @@ class Handler(BaseHTTPRequestHandler):
         if not candidate.exists() or not candidate.is_file():
             candidate = PUBLIC / "index.html"
         content = candidate.read_bytes()
-        types = {".html": "text/html", ".css": "text/css", ".js": "application/javascript", ".json": "application/json", ".svg": "image/svg+xml"}
+        types = {".html": "text/html", ".css": "text/css", ".js": "application/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png"}
         self.send_response(200)
         self.send_header("Content-Type", types.get(candidate.suffix, "application/octet-stream"))
         self.send_header("Content-Length", str(len(content)))

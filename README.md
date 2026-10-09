@@ -1,6 +1,6 @@
 # FlowPilot — Plataforma de automação de processos
 
-Dashboard operacional em tema escuro roxo para organizar automações, acompanhar filas e investigar falhas.
+Dashboard operacional em tema escuro azul-noturno para organizar automações, acompanhar filas e investigar falhas.
 
 ## Requisitos
 
