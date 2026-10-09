@@ -83,7 +83,7 @@ def seed(conn):
     automations = [
         ("file-sorter", "Organizador de arquivos", "Move arquivos para pastas por tipo e projeto.", "Arquivos", "active", "A cada 1 hora", "folder", "violet", 128, 99.2, 42),
         ("sales-report", "Relatório de vendas", "Consolida pedidos e envia um resumo para a equipe.", "Relatórios", "active", "Diariamente às 08:00", "chart", "amber", 84, 97.6, 118),
-        ("data-cleanup", "Limpeza de dados", "Remove duplicidades e normaliza campos do CRM.", "Dados", "paused", "Toda segunda-feira", "sparkle", "cyan", 46, 94.1, 86),
+        ("data-cleanup", "Limpeza de dados", "Remove duplicidades e normaliza campos do CRM.", "Dados", "paused", "Toda segunda-feira", "monkey", "cyan", 46, 94.1, 86),
         ("invoice-check", "Validador de notas", "Confere campos obrigatórios antes do processamento fiscal.", "Financeiro", "active", "Quando um arquivo chegar", "shield", "pink", 212, 98.7, 31),
     ]
     for item in automations:
@@ -262,7 +262,7 @@ class Handler(BaseHTTPRequestHandler):
                 body = self.read_json()
                 name = str(body.get("name", "Nova automação")).strip() or "Nova automação"
                 automation_id = f"auto-{uuid.uuid4().hex[:8]}"
-                conn.execute("INSERT INTO automations (id,name,description,category,status,schedule,icon,color,runs,success_rate,avg_duration,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", (automation_id, name, body.get("description", "Automação criada pelo painel."), body.get("category", "Operações"), "active", body.get("schedule", "Manual"), body.get("icon", "sparkle"), "violet", 0, 100, 0, now_iso()))
+                conn.execute("INSERT INTO automations (id,name,description,category,status,schedule,icon,color,runs,success_rate,avg_duration,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", (automation_id, name, body.get("description", "Automação criada pelo painel."), body.get("category", "Operações"), "active", body.get("schedule", "Manual"), body.get("icon", "monkey"), "violet", 0, 100, 0, now_iso()))
                 conn.commit()
                 data = row_dict(get_automation(conn, automation_id))
                 conn.close()

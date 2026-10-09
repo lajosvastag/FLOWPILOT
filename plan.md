@@ -20,7 +20,7 @@ Plataforma de automação de processos para organizar tarefas repetitivas, proce
 - **Interação:** cada clique importante responde com mudança de status, toast e registro no histórico. Modais curtos para decisões, sem esconder contexto.
 - **Animação:** entrada suave de cards, pulse discreto em automações ativas e transições de 180–240ms; nenhum movimento decorativo excessivo.
 - **Tipografia:** Inter/system para interface, com pesos 500/600/700; números operacionais em fonte monoespaçada.
-- **Essência:** “o painel de controle para fazer o trabalho repetitivo desaparecer”; confiável, direto, vigilante.
+- **Essência:** “o painel de controle para fazer o trabalho repetitivo desaparecer”; confiável, direto, vigilante. A autoria visual e tecnológica exibida no produto é da Curie Edge.
 - **Voz:** objetiva e encorajadora. Exemplos: “Automatize o próximo gargalo.” e “Cada execução deixa um rastro claro.”
 - **Logotipo:** monograma F formado por dois trilhos conectados dentro de um hexágono arredondado.
 - **Cor proprietária:** `#8B5CF6` (violeta FlowPilot).
